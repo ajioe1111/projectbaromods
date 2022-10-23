@@ -5,9 +5,9 @@
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="128,960,64,64" origin="0.5,0.45" />
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
     <Upgrade gameversion="0.14.4.0" positiony="+30" />
-    <Sprite texture="Content/Items/Command/CommandDevices.png" depth="0.8" sourcerect="0,0,384,304" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="0,320,384,304" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="0,640,384,304" depth="0.8" maxcondition="0" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/CommandDevices.png" depth="0.8" sourcerect="0,0,384,304" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="0,320,384,304" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="0,640,384,304" depth="0.8" maxcondition="0" origin="0.5,0.5" />
     <Steering minvoltage="0.5" canbeselected="true" powerconsumption="10" linkuitocomponent="Sonar" msg="ItemMsgInteractSelect" allowuioverlap="true" hudlayer="-1">
       <GuiFrame relativesize="0.55,0.59" anchor="Center" style="OuterGlow" color="0,0,0,0.8" relativeoffset="0.1,-0.05" />
       <StatusEffect type="InWater" target="This" condition="-0.5" />
@@ -17,11 +17,11 @@
       <SteeringIndicator texture="%ModDir%/Png/NavUI.png" sourcerect="0,135,362,16" origin="0,0.5"/>
       <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" allowingameediting="false">
         <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
-        <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="0,0,384,304" origin="0.5,0.5" alpha="1.0" />
+        <sprite texture="%ModDir%/Png/navigatorLights.png" depth="0.025" sourcerect="0,0,384,304" origin="0.5,0.5" alpha="1.0" />
       </LightComponent>
       <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" blinkfrequency="1" allowingameediting="false">
         <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
-        <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="400,0,384,304" origin="0.5,0.5" alpha="1.0" />
+        <sprite texture="%ModDir%/Png/navigatorLights.png" depth="0.025" sourcerect="400,0,384,304" origin="0.5,0.5" alpha="1.0" />
       </LightComponent>
     </Steering>
     <aitarget sightrange="200" soundrange="8000" staticsight="true" fadeouttime="5" />
@@ -34,7 +34,7 @@
       <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
       <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
       <ScreenOverlay texture="%ModDir%/Png/sonarOverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/Png/sonarBackground.png" origin="0.5,0.5" />
       <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
       <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
       <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
@@ -95,12 +95,12 @@
   </Item>
   <Item name="" identifier="shuttlenavterminal" tags="command,navterminal,secondarynavterminal" linkable="true" allowedlinks="statusmonitor" category="Machine" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
     <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="128,960,64,64" origin="0.5,0.45" />
-    <Sprite texture="Content/Items/Command/CommandDevices.png" depth="0.8" sourcerect="400,0,288,240" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="400,256,288,240" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="400,512,288,240" depth="0.8" maxcondition="0" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/CommandDevices.png" depth="0.8" sourcerect="400,0,288,240" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="400,256,288,240" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="400,512,288,240" depth="0.8" maxcondition="0" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" allowingameediting="false">
       <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
-      <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="256,320,288,240" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Png/navigatorLights.png" depth="0.025" sourcerect="256,320,288,240" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <Steering minvoltage="0.5" canbeselected="true" powerconsumption="10" linkuitocomponent="Sonar" msg="ItemMsgInteractSelect" allowuioverlap="true" hudlayer="-1">
       <GuiFrame relativesize="0.55,0.59" anchor="Center" style="OuterGlow" color="0,0,0,0.8" relativeoffset="0.1,-0.05" />
@@ -120,7 +120,7 @@
       <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
       <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
       <ScreenOverlay texture="%ModDir%/Png/sonarOverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/Png/sonarBackground.png" origin="0.5,0.5" />
       <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
       <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
       <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
@@ -180,9 +180,9 @@
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="128,960,64,64" origin="0.5,0.45" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
     <Upgrade gameversion="0.14.4.0" positiony="+53" />
-    <Sprite texture="Content/Items/Command/CommandDevices.png" depth="0.8" sourcerect="0,0,384,212" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="0,320,384,212" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="0,640,384,212" depth="0.8" maxcondition="0" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/CommandDevices.png" depth="0.8" sourcerect="0,0,384,212" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="0,320,384,212" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="0,640,384,212" depth="0.8" maxcondition="0" origin="0.5,0.5" />
     <aitarget sightrange="200" soundrange="8000" staticsight="true" fadeouttime="5" />
     <Sonar canbeselected="true" powerconsumption="100" displaybordersize="-0.1" allowuioverlap="true" hudlayer="-1" rightlayout="true">
       <GuiFrame relativesize="0.55,0.59" anchor="Center" style="OuterGlow" color="0,0,0,0.8" relativeoffset="0.1,-0.05" />
@@ -193,7 +193,7 @@
       <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
       <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
       <ScreenOverlay texture="%ModDir%/Png/sonarOverlay.png" origin="0.5,0.5" />
-      <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+      <ScreenBackground texture="%ModDir%/Png/sonarBackground.png" origin="0.5,0.5" />
       <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
       <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
       <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
@@ -240,12 +240,12 @@
     <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="64,987,28,20" origin="0.5,0.45" />
     <Upgrade gameversion="0.10.0.0" scale="*0.5" />
     <Upgrade gameversion="0.14.4.0" positiony="+38" />
-    <Sprite texture="Content/Items/Command/CommandDevices.png" sourcerect="720,0,160,128" depth="0.8" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="720,144,160,128" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Command/CommandDevices.png" sourcerect="720,288,160,128" depth="0.8" maxcondition="0" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="720,0,160,128" depth="0.8" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="720,144,160,128" depth="0.8" maxcondition="80" fadein="true" origin="0.5,0.5" />
+    <BrokenSprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="720,288,160,128" depth="0.8" maxcondition="0" origin="0.5,0.5" />
     <LightComponent range="10.0" lightcolor="255,255,255,0" powerconsumption="5" IsOn="true" castshadows="false" allowingameediting="false">
       <Upgrade gameversion="0.9.600.0" lightcolor="255,255,255,0"/>
-      <sprite texture="Content/Items/Command/navigatorLights.png" depth="0.025" sourcerect="0,320,160,128" origin="0.5,0.5" alpha="1.0" />
+      <sprite texture="%ModDir%/Png/navigatorLights.png" depth="0.025" sourcerect="0,320,160,128" origin="0.5,0.5" alpha="1.0" />
     </LightComponent>
     <MiniMap MinVoltage="0.5" PowerConsumption="100" canbeselected="true" msg="ItemMsgInteractSelect" allowuioverlap="true">
       <GuiFrame relativesize="0.5,0.5" anchor="Center" style="ItemUI" />
@@ -284,7 +284,7 @@
   </Item>
   <Item name="" identifier="sonartransducer" tags="command,sonartransducer" category="Machine" spritecolor="255,255,255,255" Scale="0.5">
     <!-- TODO: sonar transducer light implementation -->
-    <Sprite texture="Content/Items/Command/CommandDevices.png" sourcerect="416,784,192,96" depth="0.8" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/CommandDevices.png" sourcerect="416,784,192,96" depth="0.8" origin="0.5,0.5" />
     <SonarTransducer MinVoltage="0.5" PowerConsumption="100" canbeselected="true" />
     <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver">
       <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
