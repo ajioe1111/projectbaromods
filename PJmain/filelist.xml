@@ -8,4 +8,5 @@
   <Item file="%ModDir%/personal/Adrian_rey/Adrian_rey.xml" />
   <Item file="%ModDir%/personal/Nikita_Babaev/Babaev.xml" />
   <Item file="%ModDir%/personal/Allan/Allan.xml" />
+  <Sounds file="%ModDir%/personal/Allan/sounds.xml" />
 </contentpackage>

@@ -1,4 +1,4 @@
-﻿<Item name="Аллан: Мех" identifier="pj_allan" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="Мех компании Infinity. Внешне почти как новый. Модель неизвестна." allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
+﻿<Item name="Алан: Мех" identifier="pj_allan" aliases="worker hardsuit" category="Equipment" tags="diving,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="Мех компании Infinity. Внешне почти как новый. Модель неизвестна." allowdroppingonswap="true" impactsoundtag="impact_metal_heavy">
   <InventoryIcon texture="%moddir%/personal/Allan/SYSP.png" sourcerect="0,0,256,256" />
   <Sprite name="Diving Suit Item" texture="%moddir%/personal/Allan/SYSP.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" scale="0.2"/>
   <Body radius="45" width="34" density="15" />
