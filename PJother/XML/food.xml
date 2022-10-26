@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Бутылка кваса (Альфола)" identifier="pj_kvas" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="KvasInv" texture="%ModDir%/PJother/Png/kvas.png" sourcerect="65,159,56,193" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/PJother/Png/kvas.png" sourcerect="74,21,36,118" depth="0.6" origin="0.5,0.5" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <Affliction identifier="paralysisresistance" amount="25" />
+        <Affliction identifier="durationincrease" amount="25" />
+        <Affliction identifier="strengthen" amount="25" />
+        <ReduceAffliction identifier="hunger" amount="20" />
+        <ReduceAffliction identifier="thirst" amount="70" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Пакет питания (FFS Стандарт)" identifier="pj_ffs_s" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="pj_ffs_s_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="16,8,56,77" origin="0.502207,0.5030564" />
+    <Sprite texture="%ModDir%/Png/foodMap.png" sourcerect="16,8,56,77" depth="0.6" origin="0.5,0.5" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="hunger" amount="70" />
+        <ReduceAffliction identifier="thirst" amount="15" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Пакет питания (FFS Кофейный)" identifier="pj_ffs_c" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="pj_ffs_c_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="81,8,56,77" origin="0.502207,0.5030564" />
+    <Sprite texture="%ModDir%/Png/foodMap.png" sourcerect="81,8,56,77" depth="0.6" origin="0.5,0.5" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="hunger" amount="50" />
+        <ReduceAffliction identifier="thirst" amount="20" />
+        <Affliction identifier="haste" amount="100" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Пакет питания (FFS Фруктовый)" identifier="pj_ffs_f" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="pj_ffs_f_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="144,8,56,77" origin="0.502207,0.5030564" />
+    <Sprite texture="%ModDir%/Png/foodMap.png" sourcerect="144,8,56,77" depth="0.6" origin="0.5,0.5" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="hunger" amount="50" />
+        <ReduceAffliction identifier="thirst" amount="50" />
+        <Affliction identifier="psychosisresistance" amount="100" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="Пакет питания (FFS Офицерский)" identifier="pj_ffs_o" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="pj_ffs_o_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="208,8,56,77" origin="0.502207,0.5030564" />
+    <Sprite texture="%ModDir%/Png/foodMap.png" sourcerect="208,8,56,77" depth="0.6" origin="0.5,0.5" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="hunger" amount="300" />
+        <ReduceAffliction identifier="thirst" amount="25" />
+        <Affliction identifier="strengthen" amount="100" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+</Items>

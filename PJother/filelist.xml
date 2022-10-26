@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <contentpackage name="PJother" modversion="1.0.2" corepackage="False" steamworkshopid="2878966436" gameversion="0.19.14.0">
   <Item file="%ModDir%/XML/command.xml" />
+  <Item file="%ModDir%/XML/food.xml" />
 </contentpackage>
