@@ -222,6 +222,7 @@
         <Affliction identifier="organdamage" strength="20" />
         <Affliction identifier="bleeding" strength="13" />
         <Affliction identifier="gunshotwound" strength="10" />
+        <Affliction identifier="blinded" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -247,6 +248,7 @@
         <Affliction identifier="organdamage" strength="20" />
         <Affliction identifier="bleeding" strength="15" />
         <Affliction identifier="gunshotwound" strength="15" />
+        <Affliction identifier="blinded" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -284,6 +286,7 @@
         <Affliction identifier="organdamage" strength="25" />
         <Affliction identifier="bleeding" strength="18" />
         <Affliction identifier="gunshotwound" strength="20" />
+        <Affliction identifier="blinded" strength="5" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -321,6 +324,7 @@
         <Affliction identifier="organdamage" strength="8" />
         <Affliction identifier="bleeding" strength="10" />
         <Affliction identifier="gunshotwound" strength="2" />
+        <Affliction identifier="blinded" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">
         <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
