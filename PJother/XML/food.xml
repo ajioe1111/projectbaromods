@@ -3,8 +3,8 @@
   <Item name="Бутылка кваса (Альфола)" identifier="pj_kvas" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
     <SuitableTreatment identifier="thirst" suitability="65" />
-    <InventoryIcon name="KvasInv" texture="%ModDir%/PJother/Png/kvas.png" sourcerect="65,159,56,193" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/PJother/Png/kvas.png" sourcerect="74,21,36,118" depth="0.6" origin="0.5,0.5" />
+    <InventoryIcon name="KvasInv" texture="%ModDir%/Png/kvas.png" sourcerect="65,159,56,193" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/kvas.png" sourcerect="74,21,36,118" depth="0.6" origin="0.5,0.5" />
     <Body width="48" height="56" density="20" />
     <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
       <StatusEffect type="OnUse" target="This" Condition="-33.4" disabledeltatime="true" />

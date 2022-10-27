@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="PJmain" modversion="1.0.3" corepackage="False" steamworkshopid="2045177897" gameversion="0.19.14.0">
+<contentpackage name="PJmain" modversion="1.0.4" corepackage="False" steamworkshopid="2045177897" gameversion="0.19.14.0">
   <Character file="%ModDir%/npc/Human/Human.xml" />
   <Afflictions file="%ModDir%/npc/Human/Afflictions.xml" />
   <Character file="%ModDir%/npc/X/X.xml" />
@@ -9,4 +9,6 @@
   <Item file="%ModDir%/personal/Nikita_Babaev/Babaev.xml" />
   <Item file="%ModDir%/personal/Allan/Allan.xml" />
   <Sounds file="%ModDir%/personal/Allan/sounds.xml" />
+  <Character file="%ModDir%/personal/Yuko/Yuko.xml" />
+  <Item file="%ModDir%/personal/Yuko/uniform.xml" />
 </contentpackage>
