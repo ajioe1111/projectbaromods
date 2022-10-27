@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="PJweapons" modversion="1.0.2" corepackage="False" steamworkshopid="2879777805" gameversion="0.19.14.0">
+  <Item file="%ModDir%/XML/weapons.xml" />
+  <Item file="%ModDir%/XML/Jobgeer.xml" />
+</contentpackage>
