@@ -16,10 +16,11 @@
         <ReduceAffliction identifier="hunger" amount="20" />
         <ReduceAffliction identifier="thirst" amount="70" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
     </Holdable>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
   </Item>
   <Item name="Пакет питания (FFS Стандарт)" identifier="pj_ffs_s" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
@@ -34,10 +35,11 @@
         <ReduceAffliction identifier="hunger" amount="70" />
         <ReduceAffliction identifier="thirst" amount="15" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
     </Holdable>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
   </Item>
   <Item name="Пакет питания (FFS Кофейный)" identifier="pj_ffs_c" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
@@ -53,10 +55,11 @@
         <ReduceAffliction identifier="thirst" amount="20" />
         <Affliction identifier="haste" amount="100" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
     </Holdable>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
   </Item>
   <Item name="Пакет питания (FFS Фруктовый)" identifier="pj_ffs_f" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
@@ -72,10 +75,11 @@
         <ReduceAffliction identifier="thirst" amount="50" />
         <Affliction identifier="psychosisresistance" amount="100" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
     </Holdable>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
   </Item>
   <Item name="Пакет питания (FFS Офицерский)" identifier="pj_ffs_o" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
@@ -91,9 +95,29 @@
         <ReduceAffliction identifier="thirst" amount="25" />
         <Affliction identifier="strengthen" amount="100" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This">
-        <Remove />
-      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
     </Holdable>
+    <Deconstruct time="6">
+      <Item identifier="plastic" />
+    </Deconstruct>
+  </Item>
+  <Item name="Бутылка воды" identifier="pj_water" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Одноразовая бутылка воды серийного производства." useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+    <SuitableTreatment identifier="hunger" suitability="50" />
+    <SuitableTreatment identifier="thirst" suitability="65" />
+    <InventoryIcon name="waterinv" texture="%ModDir%/Png/foodMap.png" sourcerect="461,395,33,103" origin="0.55641806,0.53135824" />
+    <Sprite texture="%ModDir%/Png/foodMap.png" sourcerect="461,395,33,103" depth="0.6" origin="0.56210935,0.5700583" />
+    <Body width="48" height="56" density="20" />
+    <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnUse" target="This" Condition="-50.0" disabledeltatime="true" />
+      <StatusEffect type="InWater" target="This" Condition="100.0" setvalue="true" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="thirst" amount="150" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" Condition="0" setvalue="true"/>
+    </Holdable>
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+    </Deconstruct>
   </Item>
 </Items>

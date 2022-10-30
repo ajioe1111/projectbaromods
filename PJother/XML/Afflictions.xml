@@ -1,0 +1,23 @@
+<Afflictions>
+<Affliction name="Стазис" identifier="pj_stasis" description="Пациент находится в стазисе" type="stun" limbspecific="false" indicatorlimb="Torso" activationthreshold="0" showiconthreshold="0" minstrength="30" maxstrength="100">
+    <Effect minstrength="0" maxstrength="30" minvitalitydecrease="3" maxvitalitydecrease="5" strengthchange="1.50">
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="progressivestun" amount="50" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="30" maxstrength="70" minvitalitydecrease="3" maxvitalitydecrease="5" strengthchange="1.00">
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="progressivestun" amount="80" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="70" maxstrength="100" minvitalitydecrease="3" maxvitalitydecrease="5" strengthchange="2.99">
+      <StatusEffect target="Character" setvalue="true">
+        <Affliction identifier="progressivestun" amount="85" />
+        <Affliction identifier="stun" amount="30" /> 
+        <Affliction identifier="durationincrease" amount="600" />
+        <Affliction identifier="regeneration" amount="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Png/stasis_icon.png" color=" 195,136,60,255" origin=" 0,0" />
+  </Affliction>
+</Afflictions>

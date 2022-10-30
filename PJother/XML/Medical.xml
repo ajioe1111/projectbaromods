@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <item name="Шприц с раствором HSS-23 (Стазис)" identifier="pj_stasis" category="Medical" maxstacksize="1" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" description="Тяжелый раствор стазиса 23 крепкости. Вводит пациента в состояние медикаментозного стазиса. Раствор является эксперементальным и может пагубно влиять на здоровье." scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/Png/medicalMap.png" sourcerect="13,7,39,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/medicalMap.png" sourcerect="13,7,39,71" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" Condition="-100.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="1">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="pj_stasis" amount="25" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="1">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <Affliction identifier="pj_stasis" amount="25" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+  </item>
+  <item name="Шприц с антистазимным раствором" identifier="pj_anti_stasis" category="Medical" maxstacksize="1" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" useinhealthinterface="true" description="Токсичный раствор для вывода HSS-23 из организма пациента тем самым вывод из состояния стазиса. Раствор очень токсичен и может убить пациента!" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <InventoryIcon texture="%ModDir%/Png/medicalMap.png" sourcerect="57,7,39,71" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Png/medicalMap.png" sourcerect="57,7,39,71" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="15" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnFailure" target="This" Condition="-15.0" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" Condition="-15.0" disabledeltatime="true" />
+      <RequiredSkill identifier="medical" level="30" />
+      <StatusEffect tags="medical" type="OnUse" target="Character" duration="1">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="pj_stasis" amount="16" />
+        <Affliction identifier="opiatewithdrawal" amount="14" />
+      </StatusEffect>
+      <StatusEffect tags="medical" type="OnFailure" target="Character" duration="1">
+        <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
+        <ReduceAffliction identifier="pj_stasis" amount="16" />
+        <Affliction identifier="opiatewithdrawal" amount="15" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+    </MeleeWeapon>
+    <Projectile characterusable="false" launchimpulse="20.0" sticktocharacters="true" launchrotation="-90" inheritstatuseffectsfrom="MeleeWeapon" inheritrequiredskillsfrom="MeleeWeapon" />
+  </item>
+</Items>
