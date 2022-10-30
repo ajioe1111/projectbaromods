@@ -1,0 +1,19 @@
+<Items>
+    <Item name="Юко: модуль связи" identifier="pj_yuko_headset" scale="0.5" category="Equipment" tags="smallitem,mobileradio" description="Особый модуль связи для системы лазарь" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+      <PreferredContainer primary="crewcab" secondary="divingcab"/>
+      <InventoryIcon texture="%ModDir%/personal/Yuko/yuko_headset.png" sourcerect="256,0,64,64" origin="0.5,0.5" />
+      <Sprite name="Headset" texture="%ModDir%/personal/Yuko/yuko_headset.png" depth="0.6" sourcerect="28,321,49,62" origin="0.5,0.5" />
+      <Body radius="20" height="20" density="30" />
+      <WifiComponent range="75000" LinkToChat="true" MinChatMessageInterval="0.0">
+        <!--RequiredItems items="mobilebattery" type="Contained" /-->
+      </WifiComponent>
+      <Upgrade gameversion="0.18.0.0">
+        <WifiComponent>
+          <RequiredItems items="" />
+        </WifiComponent>
+      </Upgrade>
+      <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
+        <sprite name="Headset Wearable" texture="%ModDir%/personal/Yuko/yuko_headset.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="true" sourcerect="26,317,51,64" origin="0.5,0.6" />
+      </Wearable>
+    </Item>
+    </Items>

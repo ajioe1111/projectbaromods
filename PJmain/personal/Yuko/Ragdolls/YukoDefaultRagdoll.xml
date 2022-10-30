@@ -9,17 +9,24 @@
     <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="bleeding,bitewounds" AfflictionTypes="" />
   </limb>
   <limb Name="Head (1)" ID="1" Type="Head" Notes="" Scale="0.5" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="0" InheritLimbDepth="None" SteerForce="0" Radius="45" Height="0" Width="0" Density="10" IgnoreCollisions="False" AngularDamping="7" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05">
-    <sprite SourceRect="0,0,128,128" Origin="0.5,0.5" Depth="0.05" Texture="%ModDir%/personal/Yuko/Human_[GENDER]_heads.png" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />
+    <sprite name="yuko_head" SourceRect="0,0,128,128" Origin="0.5,0.5" Depth="0.05" Texture="%ModDir%/personal/Yuko/Human_female_heads.png" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" >
+    </sprite>
     <tintmask texture="%ModDir%/npc/Human/Human_[GENDER]_heads_mask.png" />
     <huskmask texture="%ModDir%/npc/Human/Human_husk_mask.png" />
     <damagedsprite texture="%ModDir%/npc/Human/Human_damage.png" sourcerect="0,0,128,128"/>
-    <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="2.0" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="gunshotwound,lacerations,blunttrauma" AfflictionTypes="" />
+    <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.70" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="gunshotwound,lacerations,blunttrauma" AfflictionTypes="" />
     <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers="bleeding,bitewounds" AfflictionTypes="" />
     <StatusEffect type="OnDamaged" target="This">
       <RequiredAffliction identifier="gunshotwound,internaldamage,blunttrauma,bitewounds,explosiondamage" minstrength="5" />
       <Affliction identifier="concussion" strength="100" probability="0.10" />
     </StatusEffect>
     <StatusEffect type="OnActive" target="Character" HideFace="true" ObstructVision="true" setvalue="true" disabledeltatime="true"></StatusEffect>
+    <lightsource castshadows="false" Color="36,168,150,255" Range="1" Scale="1" Offset="0,0" Rotation="0" Flicker="0.5" FlickerSpeed="0.6" PulseFrequency="0.0" PulseAmount="0" BlinkFrequency="0">
+      <lighttexture Texture="%ModDir%/personal/Yuko/Human_female_heads_light2.png" Origin="0.5,0.5" Size="5,0" />
+      <sprite name="yuko_light" texture="%ModDir%/personal/Yuko/Human_female_heads_light.png" sourcerect="0,0,128,128" origin="0.5,0.5" size="1,1" alpha="0.5" />
+    </lightsource>
+    <WifiComponent range="35000.0" LinkToChat="true" MinChatMessageInterval="0.0">
+    </WifiComponent>
   </limb>
   <limb Name="RightArm (2)" ID="2" Type="RightArm" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False" SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="15" Height="50" Width="0" Density="10" IgnoreCollisions="False" AngularDamping="50" AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" ConstantTorque="0" ConstantAngle="0" AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0" BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05">
     <sprite SourceRect="272,0,64,96" Origin="0.5,0.5" Depth="0.02" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0" />

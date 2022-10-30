@@ -68,6 +68,8 @@
   </health>
   <inventory arrowslot="9" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1" >
     <Item identifier="idcard" equip="true"/>
+    <Item identifier="pj_yuko_uniform" equip="true"/>
+    <Item identifier="pj_yuko_headset" equip="true"/>
   </inventory>
   <Heads>
     <Head tags="head1,female" sheetindex="0,0" />
