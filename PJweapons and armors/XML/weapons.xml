@@ -31,11 +31,11 @@
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
-      <RequiredItems items="12mm,12mmp" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="12mmdrob,12mmpyla" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="12" hideitems="true" containedstateindicatorstyle="bullet">
-      <Containable items="12mm,12mmp" />
+    <ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="12mmdrob,12mmpyla" />
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -344,7 +344,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12калибр Пулевой" identifier="12mmp" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр Пулевой" identifier="12mmpyla" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />
@@ -382,7 +382,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12калибр дробь" identifier="12mm" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр дробь" identifier="12mmdrob" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />
