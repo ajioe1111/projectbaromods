@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!--Дробовики-->
-  <Item name="Альмира" identifier="bizon" category="Weapon" description=" Производитель : (В.Э.К) CCS - 980 Альмира" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
+  <Item name="Альмира" identifier="bizon" category="Weapon" description=" Производитель : (В.Э.К) CCS - 980 Альмира 12 калибра" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
@@ -41,7 +41,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
  <!--Автоматы-->
-  <Item name="Самсара" identifier="Samsara" category="Weapon" description=" Производитель : (В.Э.К) Изделие-299 которое стреляет калибром 10,54мм. (saṃsāra «блуждание, странствование») — круговорот рождения и смерти в мирах, ограниченных кармой)" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
+  <Item name="Самсара" identifier="Samsara" category="Weapon" description=" Производитель : (В.Э.К) стреляет калибром 10,54мм." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
@@ -64,7 +64,7 @@
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="3,4,356,99" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.175" barrelpos="145,15" spread="10" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.190" barrelpos="145,15" spread="10" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -87,7 +87,7 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Е.Ф.-15" identifier="EF15" category="Weapon" description=" Производитель : (Н.Ф.) Europa Fighter - 15" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
+  <Item name="Е.Ф.-15" identifier="EF15" category="Weapon" description=" Производитель : (Н.Ф.) стреляет калибром 5,56мм." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
     <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
@@ -133,9 +133,55 @@
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
+  <Item name="Ермин" identifier="Ermine" category="Weapon" description=" Производитель : (Н.Ф.) стреляет калибром 10,55мм." cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.37" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="weaponholder" spawnprobability="0.1" />
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.25" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4" />
+    <Price baseprice="1700" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.5" sold="false" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="1.25" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="2" />
+      <Price locationtype="mine" multiplier="1.25" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="plastic" />
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Weapons/weapons.png" sourcerect="3,331,356,84" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="3,331,356,84" depth="0.55" origin="0.5,0.5" />
+    <Body width="140" height="60" density="50" />
+    <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.205" barrelpos="125,15" spread="10" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+      <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+      <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+      <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+      <Sound file="%ModDir%/Saunds/Runis_Ermine.ogg" type="OnUse" range="3000" selectionmode="random" />
+      <Sound file="%ModDir%/Saunds/Runis_Ermine1.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Saunds/Runis_Ermine2.ogg" type="OnUse" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+      </StatusEffect>
+      <!--"Use" contained magazine to spawn projectiles.-->
+      <StatusEffect type="OnUse" target="Contained">
+        <Use />
+      </StatusEffect>
+      <RequiredItems items="Ereminmag" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredSkill identifier="weapons" level="50" />
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-32,-28" containedstateindicatorstyle="bullet">
+      <Containable items="Ereminmag" />
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
   <!--Пистолеты-->
   <!--магазины-->
-  <Item name="10,54mm «Samsara» Магазин" identifier="Samsaramag" scale="0.35" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+  <Item name="10,62х54мм «Samsara» Магазин" identifier="Samsaramag" scale="0.35" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="destroyer" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="5" spawnprobability="0.25" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
@@ -163,7 +209,7 @@
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="1054mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="1054mm" />
       <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
-      <StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
+      <StatusEffect type="OnUse" target="This" condition="-5.0" disabledeltatime="true">
         <SpawnItem identifiers="1054mm" spawnposition="ThisInventory" />
       </StatusEffect>
     </ItemContainer>
@@ -171,7 +217,7 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.40" />
   </Item>
-  <Item name="5,56mm «E.F.-15» Магазин" identifier="EF15mag" scale="0.35" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+  <Item name="5,56мм «E.F.-15» Магазин" identifier="EF15mag" scale="0.35" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="destroyer" minamount="1" maxamount="1" spawnprobability="1" />
     <PreferredContainer primary="secarmcab" minamount="0" maxamount="5" spawnprobability="0.25" />
     <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
@@ -207,8 +253,46 @@
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
     <Upgrade gameversion="0.10.0.0" scale="0.40" />
   </Item>
+  <Item name="10,62х55мм «Eremin» Магазин" identifier="Ereminmag" scale="0.35" maxstacksize="2" category="Weapon" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="destroyer" minamount="1" maxamount="1" spawnprobability="1" />
+    <PreferredContainer primary="secarmcab" minamount="0" maxamount="5" spawnprobability="0.25" />
+    <PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25" />
+    <PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.4" />
+    <Price baseprice="180" minleveldifficulty="35" buyingpricemodifier="2" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.7" minavailable="2" sold="true" />
+      <Price locationtype="city" multiplier="1.7" minavailable="3" sold="true" />
+      <Price locationtype="research" multiplier="1.25" minavailable="1" sold="false" />
+      <Price locationtype="military" multiplier="1" minavailable="6" sold="true" />
+      <Price locationtype="mine" multiplier="1.9" minavailable="2" sold="false" />
+    </Price>
+    <Fabricate suitablefabricators="fabricator" requiredtime="25" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="40" />
+      <RequiredItem identifier="magnesium" />
+      <RequiredItem identifier="lead" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="lead" copycondition="true" />
+      <Item identifier="steel" copycondition="true" />
+    </Deconstruct>
+    <InventoryIcon texture="%ModDir%/Weapons/weapons.png" sourcerect="417,61,48,60" />
+    <Sprite texture="%ModDir%/Weapons/weapons.png" depth="0.56" sourcerect="417,61,48,60" origin="0.5,0.5" />
+    <Body width="30" height="40" density="50" />
+    <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="1054mm" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+      <Containable items="1054mm" />
+      <!--Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.-->
+      <!--Spawn an SMG round on use. Condition -4.8 -> 21 shots per magazine.-->
+      <!--Spawn an SMG round on use. Condition -4.0 -> 25 shots per magazine.-->
+      <StatusEffect type="OnUse" target="This" condition="-4.0" disabledeltatime="true">
+        <SpawnItem identifiers="1054mm" spawnposition="ThisInventory" />
+      </StatusEffect>
+    </ItemContainer>
+    <!--Magazines can be combined to raise condition.-->
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+    <Upgrade gameversion="0.10.0.0" scale="0.40" />
+  </Item>
   <!--Патроны-->
-  <Item name="5,56mm Патрон" identifier="556mm" category="Weapon" interactthroughwalls="true" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.3" hideinmenus="true">
+  <Item name="5,56мм Патрон" identifier="556mm" category="Weapon" interactthroughwalls="true" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.3" hideinmenus="true">
     <Deconstruct time="2">
       <Item identifier="lead" mincondition="0.9" />
     </Deconstruct>
@@ -234,7 +318,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="10,54mm Патрон" identifier="1054mm" category="Weapon" interactthroughwalls="true" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.3" hideinmenus="true">
+  <Item name="10,62x54мм Патрон" identifier="1054mm" category="Weapon" interactthroughwalls="true" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.3" hideinmenus="true">
     <Deconstruct time="2">
       <Item identifier="lead" mincondition="0.9" />
     </Deconstruct>
@@ -260,7 +344,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12mm Патрон Пулевой" identifier="12mmp" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр Пулевой" identifier="12mmp" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />
@@ -298,7 +382,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12mm Патрон" identifier="12mm" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр дробь" identifier="12mm" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />
