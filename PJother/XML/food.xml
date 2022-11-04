@@ -22,7 +22,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
   </Item>
-  <Item name="Пакет питания (FFS Стандарт)" identifier="pj_ffs_s" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="Пакет питания (FFS Стандарт)" identifier="pj_ffs_s" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Стандартный паек" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
     <SuitableTreatment identifier="thirst" suitability="65" />
     <InventoryIcon name="pj_ffs_s_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="16,8,56,77" origin="0.502207,0.5030564" />
@@ -41,7 +41,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
   </Item>
-  <Item name="Пакет питания (FFS Кофейный)" identifier="pj_ffs_c" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="Пакет питания (FFS Кофейный)" identifier="pj_ffs_c" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Кажется это пакетик с... кофе?" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
     <SuitableTreatment identifier="thirst" suitability="65" />
     <InventoryIcon name="pj_ffs_c_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="81,8,56,77" origin="0.502207,0.5030564" />
@@ -61,7 +61,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
   </Item>
-  <Item name="Пакет питания (FFS Фруктовый)" identifier="pj_ffs_f" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="Пакет питания (FFS Фруктовый)" identifier="pj_ffs_f" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Паек с добавлением фруктов!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
     <SuitableTreatment identifier="thirst" suitability="65" />
     <InventoryIcon name="pj_ffs_f_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="144,8,56,77" origin="0.502207,0.5030564" />
@@ -81,7 +81,7 @@
       <Item identifier="plastic" />
     </Deconstruct>
   </Item>
-  <Item name="Пакет питания (FFS Офицерский)" identifier="pj_ffs_o" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Вкусный сезоный напиток. Каждый глоток наполняет тело силой Альфы!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
+  <Item name="Пакет питания (FFS Офицерский)" identifier="pj_ffs_o" category="Equipment" cargocontaineridentifier="chemicalcrate" Tags="smallitem,equipment" impacttolerance="8" description="Паек для тех у кого нету времени на перекус!" useinhealthinterface="true" scale="0.3" impactsoundtag="impact_metal_light">
     <SuitableTreatment identifier="hunger" suitability="50" />
     <SuitableTreatment identifier="thirst" suitability="65" />
     <InventoryIcon name="pj_ffs_o_inv" texture="%ModDir%/Png/foodMap.png" sourcerect="208,8,56,77" origin="0.502207,0.5030564" />
