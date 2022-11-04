@@ -21,7 +21,7 @@
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="3,104,283,64" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.45" barrelpos="64,9" spread="2" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.45" barrelpos="64,9" spread="1" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -31,11 +31,11 @@
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="12.0" />
       </StatusEffect>
-      <RequiredItems items="12mm,12mmp" type="Contained" msg="ItemMsgAmmoRequired" />
+      <RequiredItems items="12mmdrob,12mmpyla" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="12" hideitems="true" containedstateindicatorstyle="bullet">
-      <Containable items="12mm,12mmp" />
+    <ItemContainer capacity="1" maxstacksize="6" hideitems="true" containedstateindicatorstyle="bullet">
+      <Containable items="12mmdrob,12mmpyla" />
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="4000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -64,7 +64,7 @@
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="3,4,356,99" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.190" barrelpos="145,15" spread="10" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.190" barrelpos="145,15" spread="7" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -110,7 +110,7 @@
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="4,169,354,78" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.15" barrelpos="145,15" spread="6" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.15" barrelpos="145,15" spread="4" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -156,7 +156,7 @@
     <Sprite texture="%ModDir%/Weapons/weapons.png" sourcerect="3,331,356,84" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="65,-2" handle1="-65,-15" handle2="15,15" holdangle="-35" msg="ItemMsgPickUpSelect" />
-    <RangedWeapon reload="0.205" barrelpos="125,15" spread="10" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+    <RangedWeapon reload="0.205" barrelpos="125,15" spread="8" unskilledspread="11" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -344,7 +344,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12калибр Пулевой" identifier="12mmp" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр Пулевой" identifier="12mmpyla" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />
@@ -382,7 +382,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="12калибр дробь" identifier="12mm" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
+  <Item name="12калибр дробь" identifier="12mmdrob" category="Weapon" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunammo" Scale="0.32" impactsoundtag="impact_metal_light">
     <Deconstruct time="10">
       <Item identifier="steel" mincondition="0.5" />
       <Item identifier="plastic" mincondition="0.8" />

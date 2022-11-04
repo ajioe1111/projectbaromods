@@ -4,4 +4,5 @@
   <Item file="%ModDir%/XML/food.xml" />
   <Afflictions file="%ModDir%/XML/Afflictions.xml" />
   <Item file="%ModDir%/XML/Medical.xml" />
+  <Item file="%ModDir%/XML/StructureRunisitem.xml" />
 </contentpackage>

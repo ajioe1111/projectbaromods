@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<Item name="Топливный бак" identifier="baktopl" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/Png/GenericAssets3.png" sourcerect="1813,1693,253,371" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+</Item>
+<Item name="Дверная Панель" identifier="poneldor" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/Png/GenericAssets3.png" sourcerect="1813,1532,249,157" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+</Item>
+<Item name="Наклейка скан карты" identifier="naklei1" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/Png/GenericAssets3.png" sourcerect="1676,1764,134,92" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+</Item>
+<Item name="Наклейка Область охраны" identifier="naklei2" width="242" height="63" scale="0.5" noninteractable="true" category="Decorative">
+    <sprite texture="%ModDir%/Png/GenericAssets3.png" sourcerect="1676,1646,134,114" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+</Item>
+</Items>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
