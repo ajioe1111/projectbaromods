@@ -2,7 +2,8 @@
 <contentpackage name="PJother" modversion="1.0.5" corepackage="False" steamworkshopid="2878966436" gameversion="0.19.14.0">
   <Item file="%ModDir%/XML/command.xml" />
   <Item file="%ModDir%/XML/food.xml" />
-  <Afflictions file="%ModDir%/XML/Afflictions.xml" />
   <Item file="%ModDir%/XML/Medical.xml" />
   <Item file="%ModDir%/XML/StructureRunisitem.xml" />
+  <Afflictions file="%ModDir%/XML/Afflictions.xml" />
+  <Sounds file="%ModDir%/XML/sounds.xml" />
 </contentpackage>
