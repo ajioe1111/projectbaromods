@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Рамеш (Форма)" identifier="pj_Ramesh_uniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Личная форма ликвидатора Рамеша Незарева. На рукове привязан кусок ткани неизвестного происхождения... Ходят слухи что именно этот кусок не дает ему умереть от рад. поражения органов." scale="0.5" impactsoundtag="impact_soft">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="256,320,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="123,144,121,62" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" variants="1" msg="ItemMsgPickUpSelect">
+      <sprite name="Ramesh_uniform Torso" texture="Ramesh_uniform.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Hand" texture="Ramesh_uniform.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Hand" texture="Ramesh_uniform.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Lower Arm" texture="Ramesh_uniform.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Lower Arm" texture="Ramesh_uniform.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Upper Arm" texture="Ramesh_uniform.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Upper Arm" texture="Ramesh_uniform.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Waist" texture="Ramesh_uniform.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Thigh" texture="Ramesh_uniform.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Thigh" texture="Ramesh_uniform.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Leg" texture="Ramesh_uniform.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Leg" texture="Ramesh_uniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Left Shoe" texture="Ramesh_uniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Ramesh_uniform Right Shoe" texture="Ramesh_uniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
+        <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true">
+        <Conditional Health="lt 10" />
+        <Affliction identifier="regeneration" amount="1" />
+      </StatusEffect>
+    </Wearable>
+    <ItemContainer capacity="4" slotsperrow="2" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier" />
+    </ItemContainer>
+  </Item>
+</Items>

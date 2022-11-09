@@ -12,4 +12,5 @@
   <Character file="%ModDir%/personal/Yuko/Yuko.xml" />
   <Item file="%ModDir%/personal/Yuko/uniform.xml" />
   <Item file="%ModDir%/personal/Yuko/headset.xml" />
+  <Item file="%ModDir%/personal/Ramesh/Ramesh.xml" />
 </contentpackage>
