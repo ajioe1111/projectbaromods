@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Items>
   <!-- UNIFORMS START -->
-  <Item name="Шлем «Rasvet-MKL»" identifier="rasvet" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.4">
+  <!-- Шлемаки -->
+  <Item name="Шлем «Rasvet-MKL»" identifier="rasvetmkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.4">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -25,7 +26,7 @@
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hidelimb="false" sourcerect="229,2,111,131" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Akimoro-MKL»" identifier="akimoro" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.4">
+  <Item name="Шлем «Akimoro-MKL»" identifier="akimoromkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.4">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -49,6 +50,7 @@
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hidelimb="false" sourcerect="340,4,110,130" origin="0.5,0.5" />
     </Wearable>
   </Item>
+  <!-- Форма -->
   <Item name="Униформа В.Э.К." identifier="MECJG" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Униформа сделана из высокопрочного волокна, так же с тонкой броне пластиной" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
@@ -87,7 +89,7 @@
       <sprite name="Mecuniform Left Leg" texture="%ModDir%/Сlothes/Mecuniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Mecuniform Right Shoe" texture="%ModDir%/Сlothes/Mecuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Mecuniform Left Shoe" texture="%ModDir%/Сlothes/Mecuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.8" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.75" />
     </Wearable>
     <ItemContainer capacity="4" depth="0.6">
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,clothing" />
@@ -134,11 +136,58 @@
       <sprite name="NFuniform Left Leg" texture="%ModDir%/Сlothes/NFuniform.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="NFuniform Right Shoe" texture="%ModDir%/Сlothes/NFuniform.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="NFuniform Left Shoe" texture="%ModDir%/Сlothes/NFuniform.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
-      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.75" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
     </Wearable>
     <ItemContainer capacity="6" depth="0.6">
       <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,clothing" />
     </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!-- Дроня -->
+  <Item name="Экзоскилет" identifier="Ekzoskel" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Екзо-скилет с броне пластинами В.Э.К." scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="2650">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="6" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="128,32,130,97" origin="0.5,0.5" />
+    <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="Eczoskull Torso" texture="%ModDir%/Сlothes/Eczoskull.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Hand" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Hand" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Lower Arm" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Lower Arm" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Upper Arm" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Upper Arm" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Waist" texture="%ModDir%/Сlothes/Eczoskull.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Thigh" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Thigh" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Leg" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Leg" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Right Shoe" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="Eczoskull Left Shoe" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" />
+      <damagemodifier afflictionidentifiers="organdamage" armorsector="0.0,360.0" damagemultiplier="0.25" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.35" />
+    </Wearable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--Made by Runis-->
