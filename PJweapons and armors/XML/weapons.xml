@@ -444,7 +444,7 @@
       <Attack structuredamage="5" targetforce="10" itemdamage="47" severlimbsprobability="0.1" stun="0.09" penetration="0.49">
         <Affliction identifier="organdamage" strength="20" />
         <Affliction identifier="bleeding" strength="15" />
-        <Affliction identifier="plasmburn" strength="30" />
+        <Affliction identifier="plasmawound" strength="30" />
         <Affliction identifier="blinded" strength="1" />
       </Attack>
       <StatusEffect type="OnImpact" target="UseTarget">

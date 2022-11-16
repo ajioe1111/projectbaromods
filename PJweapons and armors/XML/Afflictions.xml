@@ -2,7 +2,7 @@
 <Afflictions>
   <InternalDamage
     name="Plasma burn"
-    identifier="plasmburn"
+    identifier="plasmawound"
     description="The entry point is a thumb-sized, dark, bruised hole from which a little blood oozes. However, the exit wound is a large ragged mess of burnt tissue and flowing blood."
     type="damage"
     causeofdeathdescription="Shot to death"

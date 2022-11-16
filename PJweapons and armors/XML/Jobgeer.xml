@@ -68,7 +68,6 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.03" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.001" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="plasmburn" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="338,269,142,129" origin="0.5,0.5" />
     </Wearable>
   </Item>
