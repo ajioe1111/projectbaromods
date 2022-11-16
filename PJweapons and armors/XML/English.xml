@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <!--Clothes-->
+  <!--Jobs-->
+  <!--Кэп. Состав-->
+<jobname.cap1strank>Captain of the 1st rank</jobname.cap1strank>
+<jobdescription.cap1strank>Captain of the 1st rank is a very respected position, a very important person for the entire fleet as a whole.</jobdescription.cap1strank>
+<jobname.Flightshooter>Flight shooter</jobname.Flightshooter>
+<jobdescription.Flightshooter>The primary military position of an ordinary serviceman in the formations of the Armed Forces.</jobdescription.Flightshooter>
+  <!--Мех. Отдел-->
+<jobname.Motorist>Mechanic</jobname.Motorist>
+<jobdescription.Motorist>The main content of the specialist's activity is the operation and maintenance of mechanisms of electric engines, diesel engines, as well as the repair of faulty mechanisms. The specialist's work mode is forced.</jobdescription.Motorist>
+  <!--Инж. Отдел-->
+<jobname.Electrician>Electrician</jobname.Electrician>
+<jobdescription.Electrician>An electrician is engaged in the maintenance and development of electrical equipment, electric vehicles, software-controlled machines, automatic lines and similar devices. This is a purely technical profession, implying an analytical mindset and predictably belonging to the category of "man – technique".</jobdescription.Electrician>
+  <!--Основной. Состав-->  
+<jobname.Surgeon>Surgeon</jobname.Surgeon>
+<jobdescription.Surgeon>a doctor specializing in the treatment of various diseases through physical intervention in the patient's body. Usually, such pathologies cannot be cured by medication.</jobdescription.Surgeon>
+<jobname.Sailor>Sailor</jobname.Sailor>
+<jobdescription.Sailor>In the civil Fleet, a sailor is a ship's specialist of ordinary personnel who performs deck work on a ship: cleaning, stripping, painting, rigging, cargo operations, and the like.</jobdescription.Sailor>
+  <!--Afflictions-->
+  <!--Items-->
+  <ah_handcuffs_broken.ah_lockpick>Remove handcuffs</ah_handcuffs_broken.ah_lockpick>
+  <handcuffs.ah_lockpick>Lockpick handcuffs when crouching</handcuffs.ah_lockpick>
+  <entitydescription.ah_hairpin>For whenever you want to feel pretty. Could also be of use when handcuffed.</entitydescription.ah_hairpin>
+  <entitydescription.ah_handcuffs_broken>Useless. They can be deconstructed.</entitydescription.ah_handcuffs_broken>
+  <entitydescription.ah_lockpick>Forces doors and hatches open. Could also be of use when handcuffed.</entitydescription.ah_lockpick>
+  <entityname.ah_hairpin>Hairpin</entityname.ah_hairpin>
+  <entityname.ah_handcuffs_broken>Handcuffs (broken)</entityname.ah_handcuffs_broken>
+  <entityname.ah_lockpick>Lockpick</entityname.ah_lockpick>
+</infotexts>

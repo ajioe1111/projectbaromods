@@ -2,4 +2,7 @@
 <contentpackage name="PJweapons" modversion="1.6.2" corepackage="False" steamworkshopid="2882483680" gameversion="0.19.14.0">
   <Item file="%ModDir%/XML/weapons.xml" />
   <Item file="%ModDir%/XML/Jobgeer.xml" />
+  <Afflictions file="%ModDir%/XML/Afflictions.xml" />
+  <Text file="%ModDir%/XML/English.xml" />
+  <Text file="%ModDir%/XML/Russian.xml" />
 </contentpackage>

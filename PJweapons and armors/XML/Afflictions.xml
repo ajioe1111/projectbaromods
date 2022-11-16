@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+  <InternalDamage
+    name="Plasma burn"
+    identifier="plasmburn"
+    description="The entry point is a thumb-sized, dark, bruised hole from which a little blood oozes. However, the exit wound is a large ragged mess of burnt tissue and flowing blood."
+    type="damage"
+    causeofdeathdescription="Shot to death"
+    selfcauseofdeathdescription="You have died of Plasma."
+    limbspecific="true"
+    maxstrength="200"
+    karmachangeonapplied="-5"
+    damageoverlayalpha="2">
+    <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
+      minvitalitydecrease="0"
+      maxvitalitydecrease="2"
+      dialogflag="PlasmaWound"/>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0"/>
+  </InternalDamage>  
+</Afflictions>

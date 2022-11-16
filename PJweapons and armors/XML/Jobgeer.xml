@@ -22,7 +22,6 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="229,2,111,131" origin="0.5,0.5" />
     </Wearable>
   </Item>
@@ -46,11 +45,10 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="340,4,110,130" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Merrekot»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -70,7 +68,7 @@
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.03" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.001" damagesound="LimbArmor" deflectprojectiles="true" />
-      <damagemodifier afflictiontypes="concussion" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="" deflectprojectiles="true" />
+      <damagemodifier afflictiontypes="plasmburn" armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="338,269,142,129" origin="0.5,0.5" />
     </Wearable>
   </Item>
@@ -201,8 +199,8 @@
       <sprite name="Eczoskull Right Shoe" texture="%ModDir%/Сlothes/Eczoskull.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Eczoskull Left Shoe" texture="%ModDir%/Сlothes/Eczoskull.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.15" />
-      <damagemodifier afflictionidentifiers="organdamage" armorsector="0.0,360.0" damagemultiplier="0.25" />
-      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.35" />
+      <damagemodifier afflictionidentifiers="organdamage" armorsector="0.0,360.0" damagemultiplier="0.55" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" />
     </Wearable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
@@ -239,8 +237,8 @@
       <sprite name="Eczoskull Right Shoe" texture="%ModDir%/Сlothes/Eczoskull2.1.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <sprite name="Eczoskull Left Shoe" texture="%ModDir%/Сlothes/Eczoskull2.1.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.01" />
-      <damagemodifier afflictionidentifiers="organdamage" armorsector="0.0,360.0" damagemultiplier="0.05" />
-      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.25" />
+      <damagemodifier afflictionidentifiers="organdamage" armorsector="0.0,360.0" damagemultiplier="0.45" />
+      <damagemodifier afflictionidentifiers="bleeding" armorsector="0.0,360.0" damagemultiplier="0.001" />
     </Wearable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>

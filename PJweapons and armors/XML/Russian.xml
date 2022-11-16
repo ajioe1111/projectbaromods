@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Russian">
+  <!--Clothes-->
+  <!--Jobs-->
+  <!--Кэп. Состав-->
+<jobname.cap1strank>Капитан 1-го ранга</jobname.cap1strank>
+<jobdescription.cap1strank>Капитан 1-го ранга это очень уважаемая должность, очень важный человек для всего флота в целом.</jobdescription.cap1strank>
+<jobname.Flightshooter>Бортстрелок</jobname.Flightshooter>
+<jobdescription.Flightshooter>Первичная воинская должность рядового военнослужащего в формированиях Вооружённых Сил.</jobdescription.Flightshooter>
+  <!--Мех. Отдел-->
+<jobname.Motorist>Моторист-механик</jobname.Motorist>
+<jobdescription.Motorist>Основное содержание деятельности специалиста заключается в эксплуатации и обслуживании механизмов электро двигателей, дизельных двигателей, а также ремонте неисправных механизмов. Режим работы специалиста вынужденный.</jobdescription.Motorist> 
+  <!--Инж. Отдел-->
+<jobname.Electrician>Электромеханик</jobname.Electrician>
+<jobdescription.Electrician>Электромеханик занимается обслуживанием и разработкой электрооборудования, электротранспорта, станков с программным управлением,  автоматических линий и тому подобных устройств. Это сугубо техническая профессия, подразумевающая аналитический склад ума и предсказуемо относящаяся к разряду  «человек – техника».</jobdescription.Electrician>
+  <!--Основной. Состав-->
+<jobname.Surgeon>Хирург</jobname.Surgeon>
+<jobdescription.Surgeon>врач, специализирующийся на лечении различных заболеваний посредством физического вмешательства в организм пациента. Обычно такие патологии невозможно вылечить медикаментозно.</jobdescription.Surgeon>
+<jobname.Sailor>Матрос</jobname.Sailor>
+<jobdescription.Sailor>На гражданском флоте матрос — судовой специалист рядового состава, выполняющий на судне палубные работы :приборка, зачистка, покраска, такелажные работы, обеспечение грузовых операций и тому подобное.</jobdescription.Sailor>  
+  <!--Afflictions-->
+  <!--Items-->
+  <ah_handcuffs_broken.ah_lockpick>Взлом</ah_handcuffs_broken.ah_lockpick>
+  <handcuffs.ah_lockpick>Взлом наручников</handcuffs.ah_lockpick>
+  <entitydescription.ah_hairpin>Можно ваткнуть в волосы, А можно отомкнуть наручники</entitydescription.ah_hairpin>
+  <entitydescription.ah_handcuffs_broken>Бесполезная кучка железа, лучше переработать</entitydescription.ah_handcuffs_broken>
+  <entitydescription.ah_lockpick>Можно открывать Двери и Люки,,, а так же и наручники :3</entitydescription.ah_lockpick>
+  <entityname.ah_hairpin>Заколка для волос</entityname.ah_hairpin>
+  <entityname.ah_handcuffs_broken>Наручники (Сломаные)</entityname.ah_handcuffs_broken>
+  <entityname.ah_lockpick>Отмычка</entityname.ah_lockpick>
+</infotexts>
