@@ -204,9 +204,9 @@
       <Crosshair texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
       <CrosshairPointer texture="%ModDir%/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-      <Sound file="%ModDir%/Saunds/PJ_EF-15.ogg" type="OnUse" range="3000" selectionmode="random" />
-      <Sound file="%ModDir%/Saunds/PJ_EF-151.ogg" type="OnUse" range="3000" />
-      <Sound file="%ModDir%/Saunds/PJ_EF-152.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Saunds/PJ_Scorp.ogg" type="OnUse" range="3000" selectionmode="random" />
+      <Sound file="%ModDir%/Saunds/PJ_Scorp1.ogg" type="OnUse" range="3000" />
+      <Sound file="%ModDir%/Saunds/PJ_Scorp2.ogg" type="OnUse" range="3000" />
       <StatusEffect type="OnUse">
         <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
       </StatusEffect>
