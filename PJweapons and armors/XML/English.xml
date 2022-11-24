@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <!--Afflictions-->
-<afflictionname.plasmawound>Plasma wound</afflictionname.plasmawound>
-<afflictiondescription.plasmawound>The entry the size of a thumb, dark, bruised hole oozing a little blood. The exit wound, however, is a large ragged mess of exposed tissue, and it's pouring blood.</afflictiondescription.plasmawound>
-<afflictioncauseofdeath.plasmawound>Death from a plasma wound.</afflictioncauseofdeath.plasmawound>
-<afflictioncauseofdeathself.plasmawound>You have died from a plasma wound.</afflictioncauseofdeathself.plasmawound>
+  <afflictionname.plasmawound>Plasma wound</afflictionname.plasmawound>
+  <afflictiondescription.plasmawound>The entry the size of a thumb, dark, bruised hole oozing a little blood. The exit wound, however, is a large ragged mess of exposed tissue, and it's pouring blood.</afflictiondescription.plasmawound>
+  <afflictioncauseofdeath.plasmawound>Death from a plasma wound.</afflictioncauseofdeath.plasmawound>
+  <afflictioncauseofdeathself.plasmawound>You have died from a plasma wound.</afflictioncauseofdeathself.plasmawound>
 </infotexts>

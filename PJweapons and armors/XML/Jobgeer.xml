@@ -2,7 +2,7 @@
 <Items>
   <!-- UNIFORMS START -->
   <!-- Шлемаки -->
-  <Item name="Шлем «Rasvet-MKL»" identifier="rasvetmkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Rasvet-MKL»" identifier="rasvetmkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -25,7 +25,7 @@
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="229,2,111,131" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Akimoro-MKL»" identifier="akimoromkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Akimoro-MKL»" identifier="akimoromkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -48,7 +48,7 @@
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="340,4,110,130" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема : «Merrekot»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Merrekot»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -139,7 +139,7 @@
       <Item identifier="plastic" />
     </Fabricate>
     <Deconstruct time="10" />
-    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="128,32,130,97" origin="0.5,0.5" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="0,147,130,110" origin="0.5,0.5" />
     <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
@@ -164,8 +164,149 @@
     </ItemContainer>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <!-- Дроня -->
-  <Item name="Экзоскилет" identifier="Ekzoskel" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Екзо-скилет с броне пластинами компании «Merrekot»" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Форма Капитана 1го ранга" identifier="capJG" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Униформа для ношения под бронёй" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="650">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="6" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="257,24,126,105" origin="0.5,0.5" />
+    <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="cap Torso" texture="%ModDir%/Сlothes/cap.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Hand" texture="%ModDir%/Сlothes/cap.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Hand" texture="%ModDir%/Сlothes/cap.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Lower Arm" texture="%ModDir%/Сlothes/cap.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Lower Arm" texture="%ModDir%/Сlothes/cap.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Upper Arm" texture="%ModDir%/Сlothes/cap.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Upper Arm" texture="%ModDir%/Сlothes/cap.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Waist" texture="%ModDir%/Сlothes/cap.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Thigh" texture="%ModDir%/Сlothes/cap.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Thigh" texture="%ModDir%/Сlothes/cap.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Leg" texture="%ModDir%/Сlothes/cap.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Leg" texture="%ModDir%/Сlothes/cap.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Shoe" texture="%ModDir%/Сlothes/cap.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Shoe" texture="%ModDir%/Сlothes/cap.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.95" />
+    </Wearable>
+    <ItemContainer capacity="6" depth="0.6">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,clothing" />
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Форма Старпома" identifier="cap2JG" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Униформа для ношения под бронёй" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="650">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="6" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="257,24,126,105" origin="0.5,0.5" />
+    <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="cap Torso" texture="%ModDir%/Сlothes/cap2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Hand" texture="%ModDir%/Сlothes/cap2.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Hand" texture="%ModDir%/Сlothes/cap2.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Lower Arm" texture="%ModDir%/Сlothes/cap2.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Lower Arm" texture="%ModDir%/Сlothes/cap2.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Upper Arm" texture="%ModDir%/Сlothes/cap2.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Upper Arm" texture="%ModDir%/Сlothes/cap2.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Waist" texture="%ModDir%/Сlothes/cap2.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Thigh" texture="%ModDir%/Сlothes/cap2.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Thigh" texture="%ModDir%/Сlothes/cap2.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Leg" texture="%ModDir%/Сlothes/cap2.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Leg" texture="%ModDir%/Сlothes/cap2.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Right Shoe" texture="%ModDir%/Сlothes/cap2.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="cap Left Shoe" texture="%ModDir%/Сlothes/cap2.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.95" />
+    </Wearable>
+    <ItemContainer capacity="6" depth="0.6">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,clothing" />
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Форма Командира Б.Ч." identifier="cap3JG" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Униформа для ношения под бронёй" scale="0.5" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
+    <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
+    <Price baseprice="650">
+      <Price locationtype="outpost" multiplier="1" minavailable="1" />
+      <Price locationtype="city" multiplier="0.9" minavailable="1" />
+      <Price locationtype="research" multiplier="1" minavailable="1" />
+      <Price locationtype="military" multiplier="6" minavailable="1" />
+      <Price locationtype="mine" multiplier="1" minavailable="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="25" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="plastic" />
+      <Item identifier="plastic" />
+    </Fabricate>
+    <Deconstruct time="10" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="128,24,126,105" origin="0.5,0.5" />
+    <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
+    <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect">
+      <sprite name="KapitanGeneral Torso" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Hand" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Hand" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Lower Arm" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Lower Arm" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Upper Arm" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Upper Arm" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightArm" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Waist" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="Waist" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Thigh" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Thigh" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Leg" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Leg" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Right Shoe" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <sprite name="KapitanGeneral Left Shoe" texture="%ModDir%/Сlothes/KapitanGeneral.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" />
+      <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound,bitewounds" armorsector="0.0,360.0" damagemultiplier="0.85" />
+    </Wearable>
+    <ItemContainer capacity="6" depth="0.6">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,bandolier,clothing" />
+    </ItemContainer>
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <!-- Броня -->
+  <Item name="Экзоскилет" identifier="Ekzoskel" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет с броне пластинами компании «Merrekot»" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="2650">
@@ -179,7 +320,7 @@
       <Item identifier="organicfiber" />
     </Deconstruct>
     <Deconstruct time="10" />
-    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="128,32,130,97" origin="0.5,0.5" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="257,408,126,105" origin="0.5,0.5" />
     <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">
@@ -203,7 +344,7 @@
     </Wearable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Экзоскилет 2.1" identifier="Ekzoskel2" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Екзо-скилет с броне пластинами компании «Merrekot» болие дорогой модели, сделан из высоко прочного сплава" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Экзоскилет «Kabron-Mer»" identifier="Ekzoskel2" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет с броне пластинами компании «Merrekot» более дорогой модели, сделан из высоко прочного сплава" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="3650">
@@ -217,7 +358,7 @@
       <Item identifier="organicfiber" />
     </Deconstruct>
     <Deconstruct time="10" />
-    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="128,32,130,97" origin="0.5,0.5" />
+    <InventoryIcon name="MEC Icon" texture="%ModDir%/Png/OutfitIcons.png" sourcerect="257,408,126,105" origin="0.5,0.5" />
     <Sprite name="NFjgyuniform" texture="%ModDir%/Png/MiscJobGear.png" sourcerect="661,374,222,64" depth="0.6" origin="0.5,0.5" />
     <Body width="180" height="50" density="30" friction="0.8" restitution="0.01" />
     <Wearable slots="Any,OuterClothes" msg="ItemMsgPickUpSelect">

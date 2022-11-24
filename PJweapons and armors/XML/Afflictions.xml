@@ -14,7 +14,11 @@
     <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true"
       minvitalitydecrease="0"
       maxvitalitydecrease="2"
-      dialogflag="PlasmaWound"/>
-    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0"/>
-  </InternalDamage>  
+      dialogflag="PlasmaWound">
+      <StatusEffect delay="2" target="Limb" disabledeltatime="true">
+        <Affliction identifier="bleeding" strength="0.05"/>
+      </StatusEffect>
+    </Effect> 
+    <icon texture="%ModDir%/Png/MainIconsAtlas.png" sourcerect="256,768,128,128" color="195,60,60,255" origin="0,0"/>
+  </InternalDamage>
 </Afflictions>
