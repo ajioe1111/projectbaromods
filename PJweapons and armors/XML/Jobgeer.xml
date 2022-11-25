@@ -2,7 +2,7 @@
 <Items>
   <!-- UNIFORMS START -->
   <!-- Шлемаки -->
-  <Item name="Шлем «Rasvet-MKL»" identifier="rasvetmkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Rasvet-MKL»" identifier="rasvetmkl" aliases="headsat" category="Equipment" tags="smallitem,Headset" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -18,14 +18,21 @@
     </Deconstruct>
     <Sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" sourcerect="229,2,111,131" depth="0.7" origin="0.5,0.5" />
     <Body radius="30" density="50" />
-    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+    <WifiComponent range="10250.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <RequiredItems items="mobilebattery" type="Contained" />
+    </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <Wearable slots="Any,Headset" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="229,2,111,131" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Akimoro-MKL»" identifier="akimoromkl" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Akimoro-MKL»" identifier="akimoromkl" aliases="headsat" category="Equipment" tags="smallitem,Headset" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Господа, мы тупеем на этой войне»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -41,14 +48,21 @@
     </Deconstruct>
     <Sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" sourcerect="340,4,110,130" depth="0.7" origin="0.5,0.5" />
     <Body radius="30" density="50" />
-    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+    <WifiComponent range="10250.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <RequiredItems items="mobilebattery" type="Contained" />
+    </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <Wearable slots="Any,Headset" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="340,4,110,130" origin="0.5,0.5" />
     </Wearable>
   </Item>
-  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Merrekot»" impactsoundtag="impact_metal_heavy" scale="0.35">
+  <Item name="Шлем «Kabron-Mer»" identifier="kabronmer" aliases="headsat" category="Equipment" tags="smallitem,Headset" cargocontaineridentifier="metalcrate" description="Гравировка на внутренней части шлема: «Merrekot»" impactsoundtag="impact_metal_heavy" scale="0.35">
     <Upgrade gameversion="0.9.6.0" scale="0.4" />
     <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
     <Price baseprice="2575" soldeverywhere="false">
@@ -64,11 +78,42 @@
     </Deconstruct>
     <Sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" sourcerect="338,269,142,129" depth="0.7" origin="0.5,0.5" />
     <Body radius="30" density="50" />
-    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+    <WifiComponent range="10250.0" channel="0" LinkToChat="true" MinChatMessageInterval="0.0">
+      <RequiredItems items="mobilebattery" type="Contained" />
+    </WifiComponent>
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="true">
+      <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+      <Containable items="mobilebattery" />
+    </ItemContainer>
+    <Wearable slots="Any,Headset" armorvalue="20.0" msg="ItemMsgPickUpSelect">
       <damagemodifier afflictionidentifiers="blunttrauma,lacerations,gunshotwound," armorsector="0.0,360.0" damagemultiplier="0.05" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictionidentifiers="bitewounds" armorsector="0.0,360.0" damagemultiplier="0.03" damagesound="LimbArmor" deflectprojectiles="true" />
       <damagemodifier afflictiontypes="bleeding" armorsector="0.0,360.0" damagemultiplier="0.001" damagesound="LimbArmor" deflectprojectiles="true" />
       <sprite name="Rasvet" texture="%ModDir%/Сlothes/Masks.png" hidewearablesoftype="Hair" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.55" hidelimb="false" sourcerect="338,269,142,129" origin="0.5,0.5" />
+    </Wearable>
+  </Item>
+  <!-- Маски -->
+  <Item name="Балаклава закрытая" identifier="Balak1" category="Equipment" tags="smallitem" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.3">
+    <PreferredContainer primary="armcab" minamount="0" maxamount="1" spawnprobability="1" />
+    <Price baseprice="85" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.3" sold="false" />
+      <Price locationtype="city" multiplier="1.2" minavailable="1" />
+      <Price locationtype="research" multiplier="1" sold="false" />
+      <Price locationtype="military" multiplier="0.9" minavailable="3" />
+      <Price locationtype="mine" multiplier="1" sold="false" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="ballisticfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredItem identifier="ballisticfiber" />
+    </Fabricate>
+    <Sprite name="1" texture="%ModDir%/Сlothes/Masks.png" sourcerect="229,135,111,130" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Any,Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnWearing" target="Character" HideFace="true" />
+      <sprite name="1" texture="%ModDir%/Сlothes/Masks.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hidelimb="false" sourcerect="229,135,111,130" origin="0.5,0.5" />
     </Wearable>
   </Item>
   <!-- Форма -->
