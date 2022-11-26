@@ -351,7 +351,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Броня -->
-  <Item name="Экзоскилет" identifier="Ekzoskel" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет с броне пластинами компании «Merrekot»" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Экзоскелет" identifier="Ekzoskel" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет защитными пластинами компании «Merrekot»" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="2650">
@@ -389,7 +389,7 @@
     </Wearable>
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Экзоскилет «Kabron-Mer»" identifier="Ekzoskel2" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет с броне пластинами компании «Merrekot» более дорогой модели, сделан из высоко прочного сплава" scale="0.5" impactsoundtag="impact_soft">
+  <Item name="Экзоскелет «Kabron-Mer»" identifier="Ekzoskel2" aliases="securityuniform" category="Equipment" tags="smallitem,clothing" fireproof="false" cargocontaineridentifier="metalcrate" description="Экзоскелет защитными пластинами компании «Merrekot» более дорогой модели, сделан из высоко прочного сплава" scale="0.5" impactsoundtag="impact_soft">
     <PreferredContainer primary="crewcab" minamount="0" maxamount="1" spawnprobability="0.125" />
     <PreferredContainer primary="outpostcrewcabinet" minamount="1" maxamount="1" spawnprobability="0.05" />
     <Price baseprice="3650">
