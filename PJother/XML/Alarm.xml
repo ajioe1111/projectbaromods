@@ -1,0 +1,330 @@
+<items>
+<Item name="Оповещение (Лэйбор, 20 секунд)" identifier="pj_emergencysiren_01_20" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Лэйбор20Секунд.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Лэйбор, 5 секунд, без повтора)" identifier="pj_emergencysiren_01_5" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Лэйбор.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Каэдас, 20 секунд)" identifier="pj_emergencysiren_02_20" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Каэдас20Секунд.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Каэдас, 5 секунд, без повтора)" identifier="pj_emergencysiren_02_5" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Каэдас.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Сэртас, 20 секунд)" identifier="pj_emergencysiren_03_20" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Сэртас20Секунд.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Сэртас, 5 секунд, без повтора)" identifier="pj_emergencysiren_03_5" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Сэртас.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Ноль, 20 секунд)" identifier="pj_emergencysiren_04_20" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Ноль20Секунд.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="Оповещение (Ноль, 5 секунд, без повтора)" identifier="pj_emergencysiren_04_5" category="Electrical" Tags="smallitem,sound" maxstacksize="8" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <Price baseprice="150" minleveldifficulty="5">
+      <Price storeidentifier="merchantoutpost" />
+      <Price storeidentifier="merchantcity" sold="false"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" />
+      <Price storeidentifier="merchantmilitary" />
+      <Price storeidentifier="merchantmine" />
+      <Price storeidentifier="merchantengineering" multiplier="0.9" />
+    </Price>
+    <PreferredContainer primary="engcab"/>
+    <PreferredContainer secondary="wreckengcab,abandonedengcab,outpostengcab,beaconengcab" amount="1" spawnprobability="0.05" />
+    <Deconstruct time="10">
+      <Item identifier="plastic" />
+      <Item identifier="copper" />
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="10">
+      <RequiredSkill identifier="electrical" level="30" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="191,127,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Electricity/signalcomp.png" depth="0.8" sourcerect="222,72,40,62" origin="0.5,0.5" />
+    <Body radius="20" height="20" density="15" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" castshadows="false" blinkfrequency="0.68" range="20">
+      <Sprite texture="Content/Items/Electricity/signalcomp.png" sourcerect="302,894,40,62" origin="0.5,0.5" alpha="1.0" />
+      <sound file="%ModDir%/Sounds/Ноль.ogg" type="OnActive" range="10000.0" loop="true" volume="5" />
+      <StatusEffect type="OnContained" target="This" IsActive="false">
+        <Conditional targetitemcomponent="Holdable" IsActive="eq false" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+</items>
